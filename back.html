@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="public/css/amazeui.min.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <style type="text/css">
+        .controller{
+            width: 300px;
+            height: 600px;
+            float: left;
+            margin-right: 30px;
+            border-right: black solid 1px;
+        }
+        .result{
+            margin-left: 20px;
+            float: left;
+        }
+        li{
+            line-height: 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="controller" id="controller">
+       <p>地图行列（英文逗号分隔）==> <input type="text" size="1" id="map"></p>
+       <p>入口位置（英文逗号分隔）==> <input type="text" size="1" id="input"></p>
+       <p>出口位置（英文逗号分隔）==> <input type="text" size="1" id="output"></p>
+       <p>障碍物位置(每行一个坐标)</p>
+       <textarea id="obs" cols="30" rows="10"></textarea>
+       <p><button onclick="javascript:init()">提交</button></p>
+</div>
+说明<br/>
+<ul>
+    <li>入口为红色</li>
+    <li>出口为绿色</li>
+    <li>障碍物为灰色</li>
+    <li>最优路径为黄色</li>
+</ul>
+<div class="result" id="result">
+</div>
+<script src="public/js/logic/solution.js"></script>
+<script src="public/js/ui/jquery.min.js"></script>
+<script src="public/js/ui/amazeui.min.js"></script>
+<script src="public/js/ui/app.js"></script>
+</body>
+</html>

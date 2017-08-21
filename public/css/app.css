@@ -1,0 +1,19 @@
+body{
+    padding-top: 100px;
+}
+.modal_body{
+    height: 150px;
+    padding-top: 30px;
+}
+.td_entrance{
+    background-color: #dd514c;
+}
+.td_exit{
+    background-color: #5eb95e;
+}
+.td_block{
+    background-color: #999;
+}
+.td_path{
+    background-color: #F37B1D;
+}
